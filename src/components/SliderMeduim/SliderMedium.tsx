@@ -26,6 +26,7 @@ import ArrowImage from "/public/icons/arrow.svg";
 
 export const SliderMedium = ({ data }: IData) => {
   const swiperRef = useRef<SwiperType>();
+
   return (
     <>
       <ButtonsSC>
@@ -40,7 +41,6 @@ export const SliderMedium = ({ data }: IData) => {
           </ArrowRightSC>
         </ButtonSC>
       </ButtonsSC>
-
       <ContainerSwiperSC>
         <CustomSwiperSC
           slidesPerView={1}
@@ -61,7 +61,6 @@ export const SliderMedium = ({ data }: IData) => {
               <ContainerSlideSC>
                 {item.label && <LabelSC>{item.label}</LabelSC>}
                 <ImageContainerSC>{item.image}</ImageContainerSC>
-
                 <InformationSC>
                   <NameSC>{item.name}</NameSC>
                   <DescriptionSC>

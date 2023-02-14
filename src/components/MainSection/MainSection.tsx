@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 
 export const MainSection = () => {
   const { t } = useTranslation();
+
   return (
     <WrapperSC>
       <ContainerSC>

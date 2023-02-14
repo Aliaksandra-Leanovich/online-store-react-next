@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Navigation } from "../Navigation";
 import {
   ContainerBottomSC,
@@ -12,12 +13,14 @@ import {
 import Logo from "/public/icons/logo.svg";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledHeaderSC>
       <WrapperSC>
         <ContainerTopSC>
           <InformationSC>
-            <PhoneNumberSC>8 495 259 25 00</PhoneNumberSC>
+            <PhoneNumberSC>{t("header.phone")}</PhoneNumberSC>
           </InformationSC>
         </ContainerTopSC>
         <ContainerBottomSC>

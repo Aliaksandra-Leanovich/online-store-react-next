@@ -65,6 +65,7 @@ const data = [
 export const SaleSection = () => {
   const { t } = useTranslation();
   const swiperRef = useRef<SwiperType>();
+
   return (
     <WrapperSC>
       <ContainerSC>

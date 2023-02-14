@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { Advantages } from "../Advantages/Advantages";
 import {
-  AdvantageSC,
-  AdvantagesSC,
-  AdvantageTextSC,
   ContainerSC,
   DecriptionSC,
   ImageSC,
@@ -13,12 +11,12 @@ import {
   TitleSC,
   WrapperSC,
 } from "./style";
-import { itemProps } from "./types";
 import ImageIcon from "/public/icons/advantagesImage.svg";
 import ArrowImage from "/public/icons/arrow_pink.svg";
 
 export const AdvantagesSection = () => {
   const { t } = useTranslation();
+
   return (
     <WrapperSC>
       <ContainerSC>
@@ -35,18 +33,7 @@ export const AdvantagesSection = () => {
             </LinkSC>
           </DecriptionSC>
         </InformationSC>
-        <AdvantagesSC>
-          {(
-            t("advantages", {
-              returnObjects: true,
-              defaultValue: [],
-            }) as []
-          ).map((item: itemProps, index) => (
-            <AdvantageSC key={index}>
-              <AdvantageTextSC>{item.name}</AdvantageTextSC>
-            </AdvantageSC>
-          ))}
-        </AdvantagesSC>
+        <Advantages />
       </ContainerSC>
     </WrapperSC>
   );

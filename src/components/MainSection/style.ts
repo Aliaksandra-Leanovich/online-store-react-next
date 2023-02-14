@@ -6,9 +6,9 @@ export const WrapperSC = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 136px;
 `;
+
 export const BlockSC = styled.div`
   padding: 80px 0 314px 266px;
   width: 100%;
@@ -17,6 +17,7 @@ export const BlockSC = styled.div`
   flex-direction: column;
   row-gap: 42px;
 `;
+
 export const Back = styled.div`
   position: absolute;
   background-position: center;
@@ -30,7 +31,6 @@ export const Back = styled.div`
 export const ContainerSC = styled.div`
   width: 100%;
   max-width: 1920px;
-
   position: relative;
 `;
 
@@ -48,7 +48,6 @@ export const DescroptionSC = styled.p`
 export const ButtonSC = styled.button`
   background-color: ${Colors.DarkBlack};
   color: ${Colors.White};
-
   width: 100%;
   max-width: 268px;
   padding: 16px 0;

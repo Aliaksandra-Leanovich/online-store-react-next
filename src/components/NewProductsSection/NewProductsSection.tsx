@@ -78,6 +78,7 @@ const data = [
 
 export const NewProductsSection = () => {
   const { t } = useTranslation();
+
   return (
     <WrapperSC>
       <ContainerSC>

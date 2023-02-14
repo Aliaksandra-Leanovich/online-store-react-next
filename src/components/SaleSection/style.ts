@@ -4,7 +4,6 @@ import { Swiper } from "swiper/react";
 
 export const WrapperSC = styled.section`
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@ export const WrapperSC = styled.section`
 export const ContainerSC = styled.div`
   width: 100%;
 `;
+
 export const TitleSC = styled.p`
   font-family: "Open Sans", sans-serif;
 
@@ -24,9 +24,9 @@ export const SliderSC = styled.div`
   width: 100%;
   max-width: 1920px;
 `;
+
 export const ContainerTitleSC = styled.div`
   padding: 0 120px;
-
   position: relative;
 `;
 
@@ -67,11 +67,8 @@ export const CustomSwiperSC = styled(Swiper)`
 
 export const ContainerSwiperSC = styled.div`
   width: 100%;
-
   margin-top: 24px;
-
   position: relative;
-
   ${media.TABLET} {
     display: flex;
     justify-content: center;
@@ -83,7 +80,6 @@ export const ContainerSlideSC = styled.div`
   max-width: 990px;
   width: 100%;
   height: 534px;
-
   display: flex;
   flex-direction: column;
 `;
@@ -92,7 +88,6 @@ export const ButtonsSC = styled.div`
   align-self: right;
   display: flex;
   column-gap: 16px;
-
   position: absolute;
   top: 0;
   right: 0;
@@ -111,9 +106,9 @@ export const ArrowLeftSC = styled.div`
     }
   }
 `;
+
 export const ArrowRightSC = styled.div`
   transform: rotate(180deg);
-
   &:hover {
     svg {
       path {
@@ -122,24 +117,25 @@ export const ArrowRightSC = styled.div`
     }
   }
 `;
+
 export const DecriptionSC = styled.div`
   position: absolute;
   bottom: 6%;
   left: 2%;
 `;
+
 export const NameSC = styled.p`
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
-
   letter-spacing: 0.0375em;
   text-transform: uppercase;
 `;
+
 export const TypeSC = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-
   color: #969696;
 `;
 

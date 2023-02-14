@@ -2,7 +2,6 @@ import React from "react";
 import { SliderMedium } from "../SliderMeduim/SliderMedium";
 import { ContainerSC, TitleSC, WrapperSC, SliderSC } from "./style";
 import { useTranslation } from "react-i18next";
-
 import Product1Image from "/public/icons/product1.svg";
 import Product2Image from "/public/icons/product2.svg";
 import Product3Image from "/public/icons/product3.svg";
@@ -78,6 +77,7 @@ const data = [
 ];
 export const RecommendationSection = () => {
   const { t } = useTranslation();
+
   return (
     <WrapperSC>
       <ContainerSC>
