@@ -3,27 +3,22 @@ import styled from "@emotion/styled";
 
 export const StyledHeaderSC = styled.header`
   width: 100%;
-  max-width: 1920px;
+
   z-index: 2;
   top: 0;
   left: 0;
 
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background-color: white;
-
+  position: fixed;
   margin: 0 auto;
 `;
 export const WrapperSC = styled.div`
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 `;
 
 export const ContainerTopSC = styled.div`
-  width: 100%;
-
   background-color: ${Colors.LightBlack};
 
   padding: 16px 110px;
@@ -41,8 +36,8 @@ export const ContainerBottomSC = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  width: 100%;
+  background-color: ${Colors.White};
+
   column-gap: 40px;
   padding: 30px 110px;
   ${media.DESKTOP} {
