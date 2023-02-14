@@ -15,7 +15,6 @@ export const ContainerSC = styled.div`
 
 export const TitleSC = styled.p`
   font-family: "Open Sans", sans-serif;
-
   font-size: 28px;
   line-height: 32px;
 `;
@@ -136,7 +135,7 @@ export const TypeSC = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: #969696;
+  color: ${Colors.LightGraySlider};
 `;
 
 export const ImageSC = styled.div`

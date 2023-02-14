@@ -20,7 +20,7 @@ export const ContainerSC = styled.div`
 
 export const BlockSC = styled.div`
   padding: 98px 280px 98px 433px;
-  background: #f3f3f3;
+  background: ${Colors.FormBackground};
   ${media.DESKTOP} {
     padding: 76px 180px 76px 330px;
   }
@@ -35,7 +35,7 @@ export const TitleSC = styled.p`
 export const TextSC = styled.p`
   font-size: 22px;
   line-height: 29px;
-  color: #5a5a5a;
+  color: ${Colors.FormText};
 `;
 
 export const FormSC = styled.form`
@@ -48,13 +48,13 @@ export const FormSC = styled.form`
 
 export const InputSC = styled.input`
   width: 100%;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid ${Colors.FormInput};
   background-color: transparent;
   padding: 8px 2px;
   &::placeholder {
     font-size: 22px;
     line-height: 29px;
-    color: #9a9a9a;
+    color: ${Colors.FormPlaceholder};
   }
 `;
 

@@ -68,24 +68,21 @@ export const NameSC = styled.p`
 `;
 
 export const TypeSC = styled.p`
-  font-size: 16px;
-  line-height: 18px;
-  color: #5c5c66;
+  color: ${Colors.LightBlackSlider};
 `;
 
 export const NewPriceSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 16px;
   line-height: 19px;
-  color: #1a1a1a;
+  color: ${Colors.PriceSliderNew};
 `;
 
 export const OldPriceSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #bcbcbc;
+  color: ${Colors.PriceSliderOld};
 `;
 
 export const LabelSC = styled.div`
@@ -100,7 +97,7 @@ export const LabelSC = styled.div`
   color: ${Colors.White};
   width: 56px;
   height: 56px;
-  background-color: #ff3465;
+  background-color: ${Colors.Label};
   display: flex;
   align-items: center;
   justify-content: center;

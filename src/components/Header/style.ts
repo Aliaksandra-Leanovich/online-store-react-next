@@ -6,7 +6,7 @@ export const StyledHeaderSC = styled.header`
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: ${Colors.White};
   position: fixed;
   margin: 0 auto;
 `;

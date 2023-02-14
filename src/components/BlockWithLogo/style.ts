@@ -1,3 +1,4 @@
+import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const BlockFirstSC = styled.div`
@@ -22,7 +23,7 @@ export const PhoneSC = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #828282;
+  color: ${Colors.LightGray3};
 `;
 
 export const EmailSC = styled.p`
@@ -30,17 +31,17 @@ export const EmailSC = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #828282;
+  color: ${Colors.LightGray3};
 `;
 
 export const AddresSC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: #828282;
+  color: ${Colors.LightGray3};
 `;
 
 export const BlockFirstFooterSC = styled.div`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: #b7b7b7;
+  color: ${Colors.LightGray2};
 `;

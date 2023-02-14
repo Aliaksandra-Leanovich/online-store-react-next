@@ -1,3 +1,4 @@
+import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const BlockThirdSC = styled.div`
@@ -33,5 +34,5 @@ export const TextSC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
   text-align: right;
-  color: #b7b7b7;
+  color: ${Colors.LightGray2};
 `;
