@@ -1,4 +1,4 @@
-import { Colors } from "@/ui";
+import { Colors, media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.section`
@@ -18,6 +18,14 @@ export const ContainerSC = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 36px;
+
+  ${media.DESKTOP} {
+    padding: 76px 80px;
+  }
+
+  ${media.LAPTOP} {
+    padding: 76px 54px;
+  }
 `;
 export const InformationSC = styled.div`
   display: flex;
@@ -30,11 +38,19 @@ export const DecriptionSC = styled.div`
 
   width: 100%;
   max-width: 770px;
+
+  ${media.DESKTOP} {
+    max-width: 570px;
+  }
 `;
 
 export const ImageSC = styled.div`
   width: 100%;
   max-width: 784px;
+
+  ${media.DESKTOP} {
+    max-width: 584px;
+  }
 `;
 export const TitleSC = styled.p`
   font-size: 32px;
@@ -66,6 +82,15 @@ export const AdvantageSC = styled.div`
   width: 100%;
   max-width: 400px;
   padding: 16px 160px 16px 32px;
+
+  ${media.DESKTOP} {
+    max-width: 300px;
+    padding: 16px 0 16px 32px;
+  }
+  ${media.LAPTOP} {
+    max-width: 280px;
+    padding: 16px 0 16px 32px;
+  }
 `;
 
 export const AdvantageTextSC = styled.p`

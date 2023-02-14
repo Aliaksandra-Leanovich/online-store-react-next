@@ -13,10 +13,18 @@ export const WrapperSC = styled.section`
 export const ContainerSC = styled.div`
   padding: 76px 120px 76px 430px;
   position: relative;
+
+  ${media.DESKTOP} {
+    padding: 76px 80px 76px 320px;
+  }
 `;
 export const BlockSC = styled.div`
   padding: 98px 280px 98px 433px;
   background: #f3f3f3;
+
+  ${media.DESKTOP} {
+    padding: 76px 180px 76px 330px;
+  }
 `;
 export const TitleSC = styled.p`
   font-weight: 700;
@@ -76,6 +84,11 @@ export const ImageSC = styled.div`
   left: 2%;
   width: 790px;
   height: 452px;
+
+  ${media.DESKTOP} {
+    width: 490px;
+    left: 8%;
+  }
 `;
 
 export const InformationSC = styled.div`
@@ -84,5 +97,5 @@ export const InformationSC = styled.div`
   row-gap: 20px;
   margin-bottom: 48px;
   width: 100%;
-  max-width: 530px;
+  max-width: 540px;
 `;
