@@ -13,15 +13,15 @@ const DETECTION_OPTIONS = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .use(LanguageDetector)
   .init({
     resources,
-    fallbackLng: "ru", // default language
-    keySeparator: false, // we do not use keys in form messages.welcome
+    fallbackLng: "ru",
+    keySeparator: false,
     detection: DETECTION_OPTIONS,
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
     },
     react: {
       useSuspense: true,
