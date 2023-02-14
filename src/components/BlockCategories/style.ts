@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const BlockSecondSC = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 8px;
 `;
 
 export const BlockTitleSC = styled.p`

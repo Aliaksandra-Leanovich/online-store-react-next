@@ -1,18 +1,23 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Navigation, Swiper as SwiperType } from "swiper";
-import ProductImage from "/public/icons/product7.svg";
+import { SwiperSlide } from "swiper/react";
+import { ButtonsSlider } from "../ButtonsSlider/ButtonsSlider";
 import {
   ContainerSC,
+  ContainerSlideSC,
   ContainerSwiperSC,
   ContainerTitleSC,
   CustomSwiperSC,
+  DecriptionSC,
+  ImageSC,
+  NameSC,
   SliderSC,
   TitleSC,
+  TypeSC,
   WrapperSC,
 } from "./style";
-import { ButtonsSlider } from "../ButtonsSlider/ButtonsSlider";
-import { SaleSlide } from "../SaleSlide/SaleSlide";
+import ProductImage from "/public/icons/product7.svg";
 
 const data = [
   {
@@ -71,8 +76,16 @@ export const SaleSection = () => {
             spaceBetween={114}
             modules={[Navigation]}
           >
-            {data.map((item) => (
-              <SaleSlide item={item} key={item.name} />
+            {data.map((item, index) => (
+              <SwiperSlide key={index}>
+                <ContainerSlideSC>
+                  <ImageSC>{item.image}</ImageSC>
+                  <DecriptionSC>
+                    <NameSC>{item.name}</NameSC>
+                    <TypeSC>{item.type}</TypeSC>
+                  </DecriptionSC>
+                </ContainerSlideSC>
+              </SwiperSlide>
             ))}
           </CustomSwiperSC>
         </ContainerSwiperSC>

@@ -19,20 +19,14 @@ export const InformationSC = styled.div`
   row-gap: 10px;
 `;
 
-export const SocialsSC = styled.div`
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-`;
-
-export const PaymentSC = styled.img`
-  width: 100%;
-  max-width: 604px;
-`;
-
 export const TextSC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
   text-align: right;
   color: ${Colors.LightGray2};
+`;
+
+export const ContainerTextSC = styled.div`
+  max-width: 708px;
+  width: 100%;
 `;

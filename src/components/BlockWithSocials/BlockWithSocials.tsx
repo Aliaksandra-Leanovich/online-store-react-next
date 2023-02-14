@@ -2,12 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { BlockTitleSC, CategorySC } from "../BlockCategories/style";
 import { IItem } from "../Footer/types";
-import Payments from "/public/icons/payments.png";
+import { Payments } from "../Payments/Payments";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 import {
   BlockThirdSC,
+  ContainerTextSC,
   InformationSC,
-  PaymentSC,
-  SocialsSC,
   TextSC,
   TopSC,
 } from "./style";
@@ -29,12 +29,12 @@ export const BlockWithSocials = () => {
             <CategorySC key={name}>{name}</CategorySC>
           ))}
         </InformationSC>
-        <SocialsSC>
-          <BlockTitleSC>{t("footer.socials")}</BlockTitleSC>
-        </SocialsSC>
+        <SocialMedia />
       </TopSC>
-      <PaymentSC src={Payments.src} />
-      <TextSC>{t("footer.text")}</TextSC>
+      <Payments />
+      <ContainerTextSC>
+        <TextSC>{t("footer.text")}</TextSC>
+      </ContainerTextSC>
     </BlockThirdSC>
   );
 };
