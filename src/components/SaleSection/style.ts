@@ -27,6 +27,14 @@ export const SliderSC = styled.div`
 export const ContainerTitleSC = styled.div`
   padding: 0 120px;
   position: relative;
+
+  ${media.LAPTOP} {
+    padding: 0 80px;
+  }
+
+  ${media.PHONE} {
+    padding: 0 14px;
+  }
 `;
 
 export const CustomSwiperSC = styled(Swiper)`
@@ -37,7 +45,6 @@ export const CustomSwiperSC = styled(Swiper)`
   }
 
   .fullscreen .swiper-slide .backdrop {
-    background: #000;
     opacity: 0.7;
     width: 100vw;
     height: 100vh;
@@ -72,6 +79,7 @@ export const ContainerSwiperSC = styled.div`
   width: 100%;
   margin-top: 24px;
   position: relative;
+
   ${media.TABLET} {
     display: flex;
     justify-content: center;
@@ -85,12 +93,20 @@ export const ContainerSlideSC = styled.div`
   height: 534px;
   display: flex;
   flex-direction: column;
+
+  ${media.PHONE} {
+    height: 634px;
+  }
 `;
 
 export const DecriptionSC = styled.div`
   position: absolute;
   bottom: 6%;
   left: 2%;
+
+  ${media.PHONE} {
+    bottom: 4%;
+  }
 `;
 
 export const NameSC = styled.p`

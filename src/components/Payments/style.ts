@@ -1,4 +1,4 @@
-import { Colors } from "@/ui";
+import { Colors, media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.div`
@@ -13,4 +13,31 @@ export const ContainerSC = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 50px;
+
+  ${media.DESKTOP} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  ${media.LAPTOP} {
+    display: flex;
+    column-gap: 50px;
+    margin: 30px 0;
+  }
+
+  ${media.TABLET} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  ${media.PHONE} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
 `;

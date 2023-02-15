@@ -1,19 +1,20 @@
 import { Links } from "../Links/Links";
 import { LinksContainerSC, StyledNavigationSC } from "./style";
-import CartIcon from "/public/icons/cart.png";
-import FavoritesIcon from "/public/icons/favorites.png";
-import ProfileIcon from "/public/icons/profile.png";
-import SearchIcon from "/public/icons/search.png";
+import { INavigationProps } from "./type";
+import CartIcon from "/public/icons/cart.svg";
+import FavoritesIcon from "/public/icons/favorites.svg";
+import ProfileIcon from "/public/icons/profile.svg";
+import SearchIcon from "/public/icons/search.svg";
 
-export const Navigation = () => {
+export const Navigation = ({ isOpen }: INavigationProps) => {
   return (
-    <StyledNavigationSC>
+    <StyledNavigationSC isOpen={isOpen}>
       <Links />
       <LinksContainerSC>
-        <img src={SearchIcon.src} alt="" />
-        <img src={FavoritesIcon.src} alt="" />
-        <img src={CartIcon.src} alt="" />
-        <img src={ProfileIcon.src} alt="" />
+        <SearchIcon />
+        <FavoritesIcon />
+        <CartIcon />
+        <ProfileIcon />
       </LinksContainerSC>
     </StyledNavigationSC>
   );

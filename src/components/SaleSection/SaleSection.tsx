@@ -67,10 +67,18 @@ export const SaleSection = () => {
         </SliderSC>
         <ContainerSwiperSC>
           <CustomSwiperSC
-            slidesPerView={2.02}
+            slidesPerView={1}
             centeredSlides={true}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
+            }}
+            breakpoints={{
+              1152: {
+                slidesPerView: 2,
+              },
+              1440: {
+                slidesPerView: 2.02,
+              },
             }}
             loop={true}
             spaceBetween={114}

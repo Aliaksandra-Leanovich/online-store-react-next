@@ -1,4 +1,4 @@
-import { Colors } from "@/ui";
+import { Colors, media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const ButtonsSC = styled.div`
@@ -7,6 +7,12 @@ export const ButtonsSC = styled.div`
   position: absolute;
   top: 0;
   right: 6%;
+
+  ${media.PHONE} {
+    position: relative;
+    right: 0;
+    margin-top: 10px;
+  }
 `;
 
 export const ButtonSC = styled.button`
@@ -25,6 +31,7 @@ export const ArrowLeftSC = styled.div`
 
 export const ArrowRightSC = styled.div`
   transform: rotate(180deg);
+
   &:active {
     svg {
       path {

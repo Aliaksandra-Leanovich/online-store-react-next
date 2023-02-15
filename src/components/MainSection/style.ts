@@ -6,7 +6,7 @@ export const WrapperSC = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 136px;
+  margin-top: 166px;
 `;
 
 export const BlockSC = styled.div`
@@ -16,6 +16,16 @@ export const BlockSC = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 42px;
+
+  ${media.TABLET} {
+    max-width: 300px;
+    padding: 80px 0 314px 46px;
+  }
+
+  ${media.PHONE} {
+    max-width: 200px;
+    padding: 80px 0 314px 14px;
+  }
 `;
 
 export const Back = styled.div`
@@ -38,11 +48,19 @@ export const TitleSC = styled.p`
   font-weight: 600;
   font-size: 99px;
   line-height: 110px;
+
+  ${media.TABLET} {
+    font-size: 52px;
+  }
 `;
 
 export const DescroptionSC = styled.p`
   font-size: 24px;
   line-height: 26px;
+
+  ${media.TABLET} {
+    font-size: 20px;
+  }
 `;
 
 export const ButtonSC = styled.button`
@@ -52,4 +70,8 @@ export const ButtonSC = styled.button`
   max-width: 268px;
   padding: 16px 0;
   text-align: center;
+
+  ${media.TABLET} {
+    max-width: 208px;
+  }
 `;

@@ -22,10 +22,16 @@ export const TitleSC = styled.p`
 export const SliderSC = styled.div`
   position: relative;
   padding: 76px 110px;
+
   ${media.DESKTOP} {
     padding: 46px 80px;
   }
+
   ${media.LAPTOP} {
     padding: 46px 40px;
+  }
+
+  ${media.PHONE} {
+    padding: 46px 14px;
   }
 `;

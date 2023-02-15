@@ -6,13 +6,20 @@ export const AdvantageSC = styled.div`
   width: 100%;
   max-width: 400px;
   padding: 16px 160px 16px 32px;
+
   ${media.DESKTOP} {
     max-width: 300px;
     padding: 16px 0 16px 32px;
   }
+
   ${media.LAPTOP} {
     max-width: 280px;
     padding: 16px 0 16px 32px;
+  }
+
+  ${media.TABLET} {
+    max-width: 220px;
+    padding: 16px 0 16px 10px;
   }
 `;
 

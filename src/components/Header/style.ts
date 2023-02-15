@@ -20,6 +20,7 @@ export const WrapperSC = styled.div`
 export const ContainerTopSC = styled.div`
   background-color: ${Colors.LightBlack};
   padding: 16px 110px;
+
   ${media.DESKTOP} {
     padding: 16px 34px;
   }
@@ -35,10 +36,11 @@ export const InformationSC = styled.div`
 export const ContainerBottomSC = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: ${Colors.White};
   column-gap: 40px;
   padding: 30px 110px;
+
   ${media.DESKTOP} {
     padding: 30px 34px;
   }

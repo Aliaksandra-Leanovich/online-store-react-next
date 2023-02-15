@@ -14,6 +14,7 @@ export const ContainerSwiperSC = styled.div`
   width: 100%;
   margin-top: 24px;
   position: relative;
+
   ${media.TABLET} {
     display: flex;
     justify-content: center;

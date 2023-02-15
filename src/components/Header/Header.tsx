@@ -1,6 +1,9 @@
-import React from "react";
+import { Colors } from "@/ui";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Navigation } from "../Navigation";
+import { Burger } from "../Burger";
+import { RightNavigation } from "../Navigation/RightNavigation";
+import { TopNavigation } from "../Navigation/TopNavigation";
 import {
   ContainerBottomSC,
   ContainerTopSC,
@@ -14,6 +17,7 @@ import Logo from "/public/icons/logo.svg";
 
 export const Header = () => {
   const { t } = useTranslation();
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <StyledHeaderSC>
@@ -27,7 +31,9 @@ export const Header = () => {
           <LogoContainerSC>
             <Logo />
           </LogoContainerSC>
-          <Navigation />
+          <TopNavigation isOpen={isOpen} />
+          <RightNavigation isOpen={isOpen} />
+          <Burger isOpen={isOpen} setOpen={setOpen} color={Colors.LightGray} />
         </ContainerBottomSC>
       </WrapperSC>
     </StyledHeaderSC>

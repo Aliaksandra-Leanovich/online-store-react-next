@@ -1,4 +1,4 @@
-import { Colors } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.div`
@@ -12,6 +12,28 @@ export const WrapperSC = styled.div`
 export const ContainerSC = styled.div`
   display: flex;
   column-gap: 10px;
+
+  ${media.DESKTOP} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 30px;
+  }
+  ${media.TABLET} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 30px;
+  }
+  ${media.PHONE} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const TitleSC = styled.p`
