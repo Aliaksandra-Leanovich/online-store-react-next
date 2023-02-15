@@ -3,18 +3,14 @@ import { useTranslation } from "react-i18next";
 import { Navigation, Swiper as SwiperType } from "swiper";
 import { SwiperSlide } from "swiper/react";
 import { ButtonsSlider } from "../ButtonsSlider/ButtonsSlider";
+import { SaleSlide } from "../SaleSlide/SaleSlide";
 import {
   ContainerSC,
-  ContainerSlideSC,
   ContainerSwiperSC,
   ContainerTitleSC,
   CustomSwiperSC,
-  DecriptionSC,
-  ImageSC,
-  NameSC,
   SliderSC,
   TitleSC,
-  TypeSC,
   WrapperSC,
 } from "./style";
 import ProductImage from "/public/icons/product7.svg";
@@ -52,6 +48,15 @@ const data = [
   },
 ];
 
+const breakpoints = {
+  1152: {
+    slidesPerView: 2,
+  },
+  1440: {
+    slidesPerView: 2.02,
+  },
+};
+
 export const SaleSection = () => {
   const { t } = useTranslation();
   const swiperRef = useRef<SwiperType>();
@@ -72,27 +77,14 @@ export const SaleSection = () => {
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
-            breakpoints={{
-              1152: {
-                slidesPerView: 2,
-              },
-              1440: {
-                slidesPerView: 2.02,
-              },
-            }}
+            breakpoints={breakpoints}
             loop={true}
             spaceBetween={114}
             modules={[Navigation]}
           >
-            {data.map((item, index) => (
-              <SwiperSlide key={index}>
-                <ContainerSlideSC>
-                  <ImageSC>{item.image}</ImageSC>
-                  <DecriptionSC>
-                    <NameSC>{item.name}</NameSC>
-                    <TypeSC>{item.type}</TypeSC>
-                  </DecriptionSC>
-                </ContainerSlideSC>
+            {data.map((item) => (
+              <SwiperSlide key={item.name}>
+                <SaleSlide item={item} />
               </SwiperSlide>
             ))}
           </CustomSwiperSC>
