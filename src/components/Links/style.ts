@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 import Link from "next/link";
 
@@ -18,17 +18,17 @@ export const LinkSC = styled(Link)`
   font-size: 18px;
   line-height: 27px;
   padding-bottom: 6px;
-
+  color: ${(props) => props.theme.color.primary};
   &:hover {
     cursor: pointer;
-    border-bottom: 2px solid ${Colors.DarkBlack};
+    border-bottom: 2px solid ${(props) => props.theme.color.primary};
   }
 
   ${media.LAPTOP} {
-    color: ${Colors.Label};
+    color: ${(props) => props.theme.color.labelSlider};
 
     &:hover {
-      border-bottom: 2px solid ${Colors.Label};
+      border-bottom: 2px solid ${(props) => props.theme.color.labelSlider};
     }
   }
 `;

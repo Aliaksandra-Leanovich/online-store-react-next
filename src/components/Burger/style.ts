@@ -30,7 +30,7 @@ export const StyledBurger = styled.button<IStylesProps>`
       height: 0.25rem;
       border-radius: 10px;
       transition: transform 0.3s linear, opacity 0.3s linear;
-      background-color: ${({ color }) => color};
+      background-color: ${(props) => props.theme.color.text};
       position: relative;
       transform-origin: 1px;
 

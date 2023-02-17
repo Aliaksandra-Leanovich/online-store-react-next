@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.div`

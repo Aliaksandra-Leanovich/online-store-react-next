@@ -1,4 +1,3 @@
-import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const ContainerSlideSC = styled.div`
@@ -44,25 +43,25 @@ export const NameSC = styled.p`
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: ${(props) => props.theme.color.textSlider};
 `;
 
 export const TypeSC = styled.p`
-  color: ${Colors.LightBlackSlider};
+  color: ${(props) => props.theme.color.textSlider2};
 `;
 
 export const NewPriceSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 19px;
-  color: ${Colors.PriceSliderNew};
+  color: ${(props) => props.theme.color.priceSliderNew};
 `;
 
 export const OldPriceSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: ${Colors.PriceSliderOld};
+  color: ${(props) => props.theme.color.priceSliderOld};
 `;
 
 export const LabelSC = styled.div`
@@ -74,8 +73,8 @@ export const LabelSC = styled.div`
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  background-color: ${(props) => props.theme.color.Pink};
-  color: ${Colors.White};
+  background-color: ${(props) => props.theme.color.labelSlider};
+  color: ${(props) => props.theme.color.secondary};
   width: 56px;
   height: 56px;
   display: flex;
@@ -84,7 +83,7 @@ export const LabelSC = styled.div`
 `;
 
 export const ButtonTheme = styled.button`
-  background-color: ${(props) => props.theme.color.Pink};
+  background-color: ${(props) => props.theme.color.labelSlider};
   width: 300px;
   padding: 20px;
 `;

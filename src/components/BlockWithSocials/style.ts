@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const BlockThirdSC = styled.div`
@@ -37,7 +37,7 @@ export const TextSC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
   text-align: right;
-  color: ${Colors.LightGray2};
+  color: ${(props) => props.theme.color.text2};
 
   ${media.TABLET} {
     text-align: left;

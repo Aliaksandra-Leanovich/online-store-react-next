@@ -1,4 +1,3 @@
-import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const BlockFirstSC = styled.div`
@@ -23,7 +22,7 @@ export const PhoneSC = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const EmailSC = styled.p`
@@ -31,17 +30,17 @@ export const EmailSC = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const AddresSC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const BlockFirstFooterSC = styled.div`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: ${Colors.LightGray2};
+  color: ${(props) => props.theme.color.text2};
 `;

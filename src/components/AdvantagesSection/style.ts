@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.section`
@@ -92,5 +92,5 @@ export const LinkSC = styled.div`
 `;
 
 export const LinkTextSC = styled.p`
-  color: ${Colors.Pink};
+  color: ${(props) => props.theme.color.labelSlider};
 `;

@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const AdvantageSC = styled.div`
@@ -26,5 +26,5 @@ export const AdvantageSC = styled.div`
 export const AdvantageTextSC = styled.p`
   font-size: 18px;
   line-height: 22px;
-  color: ${Colors.LightGray};
+  color: ${(props) => props.theme.color.text};
 `;

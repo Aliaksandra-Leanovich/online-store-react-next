@@ -1,4 +1,3 @@
-import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const ContainerSlideSC = styled.div`
@@ -27,7 +26,7 @@ export const TypeSC = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: ${Colors.LightGraySlider};
+  color: ${(props) => props.theme.color.textSlider};
 `;
 
 export const ImageSC = styled.div`

@@ -1,4 +1,3 @@
-import { Colors } from "@/ui";
 import styled from "@emotion/styled";
 
 export const BlockSecondSC = styled.div`
@@ -16,5 +15,5 @@ export const BlockTitleSC = styled.p`
 export const CategorySC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: ${Colors.LightBlack2};
+  color: ${(props) => props.theme.color.lightPrimary};
 `;

@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const WrapperSC = styled.section`
@@ -64,8 +64,8 @@ export const DescroptionSC = styled.p`
 `;
 
 export const ButtonSC = styled.button`
-  background-color: ${Colors.DarkBlack};
-  color: ${Colors.White};
+  background-color: ${(props) => props.theme.color.primary};
+  color: ${(props) => props.theme.color.secondary};
   width: 100%;
   max-width: 268px;
   padding: 16px 0;
