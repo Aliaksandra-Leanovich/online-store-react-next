@@ -74,11 +74,17 @@ export const LabelSC = styled.div`
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  background-color: ${(props) => props.theme.color.Pink};
   color: ${Colors.White};
   width: 56px;
   height: 56px;
-  background-color: ${Colors.Label};
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ButtonTheme = styled.button`
+  background-color: ${(props) => props.theme.color.Pink};
+  width: 300px;
+  padding: 20px;
 `;
