@@ -68,6 +68,7 @@ export const ImageSC = styled.div`
 export const TitleSC = styled.p`
   font-size: 32px;
   line-height: 34px;
+  color: ${(props) => props.theme.color.primary};
 
   ${media.PHONE} {
     font-size: 22px;
@@ -78,6 +79,7 @@ export const TitleSC = styled.p`
 export const TextSC = styled.p`
   font-size: 16px;
   line-height: 18px;
+  color: ${(props) => props.theme.color.primary};
 
   ${media.PHONE} {
     font-size: 14px;
@@ -89,6 +91,11 @@ export const LinkSC = styled.div`
   display: flex;
   align-items: center;
   column-gap: 2px;
+  svg {
+    path {
+      fill: ${(props) => props.theme.color.labelSlider};
+    }
+  }
 `;
 
 export const LinkTextSC = styled.p`

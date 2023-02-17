@@ -3,7 +3,7 @@ import { media } from "../../ui";
 
 export const StyledHeaderSC = styled.header`
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: ${(props) => props.theme.color.secondary};
@@ -27,7 +27,6 @@ export const ContainerTopSC = styled.div`
 `;
 
 export const InformationSC = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,5 +54,5 @@ export const LogoContainerSC = styled.a`
 export const PhoneNumberSC = styled.p`
   font-size: 22px;
   line-height: 33px;
-  color: ${(props) => props.theme.color.secondary};
+  color: ${(props) => props.theme.color.textSlider3};
 `;

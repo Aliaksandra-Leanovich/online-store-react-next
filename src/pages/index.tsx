@@ -10,7 +10,7 @@ import "../i18n/i18n";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <MainSection />
       <AdvantagesSection />
@@ -19,6 +19,6 @@ export default function Home() {
       <RecommendationSection />
       <FormSection />
       <Footer />
-    </div>
+    </>
   );
 }

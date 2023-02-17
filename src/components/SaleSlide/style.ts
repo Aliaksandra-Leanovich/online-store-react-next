@@ -26,7 +26,6 @@ export const TypeSC = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: ${(props) => props.theme.color.textSlider};
 `;
 
 export const ImageSC = styled.div`

@@ -2,7 +2,7 @@ import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const AdvantageSC = styled.div`
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid ${(props) => props.theme.color.borderAdvantage};
   width: 100%;
   max-width: 400px;
   padding: 16px 160px 16px 32px;

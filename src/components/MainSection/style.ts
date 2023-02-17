@@ -34,7 +34,7 @@ export const Back = styled.div`
   background-size: cover;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   margin: 0 auto;
 `;
 
@@ -48,6 +48,7 @@ export const TitleSC = styled.p`
   font-weight: 600;
   font-size: 99px;
   line-height: 110px;
+  z-index: 2;
 
   ${media.TABLET} {
     font-size: 52px;
@@ -57,7 +58,7 @@ export const TitleSC = styled.p`
 export const DescroptionSC = styled.p`
   font-size: 24px;
   line-height: 26px;
-
+  z-index: 2;
   ${media.TABLET} {
     font-size: 20px;
   }
@@ -70,6 +71,7 @@ export const ButtonSC = styled.button`
   max-width: 268px;
   padding: 16px 0;
   text-align: center;
+  z-index: 2;
 
   ${media.TABLET} {
     max-width: 208px;

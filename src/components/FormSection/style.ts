@@ -8,6 +8,8 @@ export const WrapperSC = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+  background-color: ${(props) => props.theme.color.secondary};
 `;
 
 export const ContainerSC = styled.div`
@@ -52,6 +54,7 @@ export const TitleSC = styled.p`
   font-weight: 700;
   font-size: 48px;
   line-height: 53px;
+  color: ${(props) => props.theme.color.primary};
 
   ${media.TABLET} {
     font-size: 32px;

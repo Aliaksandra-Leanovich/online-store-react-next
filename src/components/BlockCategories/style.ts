@@ -10,10 +10,11 @@ export const BlockTitleSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   line-height: 33px;
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const CategorySC = styled.p`
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: ${(props) => props.theme.color.lightPrimary};
+  color: ${(props) => props.theme.color.text2};
 `;

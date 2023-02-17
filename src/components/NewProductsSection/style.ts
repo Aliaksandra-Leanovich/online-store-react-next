@@ -6,6 +6,7 @@ export const WrapperSC = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.theme.color.sliderBackground};
 `;
 
 export const ContainerSC = styled.div`

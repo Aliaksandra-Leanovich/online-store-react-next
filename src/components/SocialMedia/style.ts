@@ -40,4 +40,6 @@ export const TitleSC = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   line-height: 33px;
+
+  color: ${(props) => props.theme.color.text2};
 `;

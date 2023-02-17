@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 import { IStylesProps } from "../Burger/types";
 
@@ -7,14 +7,11 @@ export const StyledNavigationSC = styled.nav<IStylesProps>`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: ${Colors.White};
-
   ${media.LAPTOP} {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     padding: 40px 0;
     flex-direction: column;
     row-gap: 30px;
-    background-color: ${Colors.DarkBlack};
   }
 `;
 
@@ -25,14 +22,14 @@ export const LinksContainerSC = styled.div`
   ${media.LAPTOP} {
     svg {
       path {
-        fill: ${Colors.Label};
+        fill: ${(props) => props.theme.color.labelSlider};
       }
     }
   }
 `;
 
 export const ContainerRightSC = styled.div<IStylesProps>`
-  background: ${Colors.DarkBlack};
+  background: ${(props) => props.theme.color.primary};
 
   height: 100vh;
   display: none;
@@ -45,7 +42,7 @@ export const ContainerRightSC = styled.div<IStylesProps>`
 
   ${media.LAPTOP} {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-    background: ${Colors.DarkBlack};
+    background: ${(props) => props.theme.color.navigationBackground};
   }
 
   ${media.PHONE} {

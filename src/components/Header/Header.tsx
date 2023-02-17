@@ -1,5 +1,4 @@
-import { useThemeUpdate } from "@/context/ThemeToggleContext";
-import { Colors } from "@/ui";
+import { useTheme, useThemeUpdate } from "@/context/ThemeToggleContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Burger } from "../Burger";
@@ -20,7 +19,13 @@ import Logo from "/public/icons/logo.svg";
 export const Header = () => {
   const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
+  const activeTheme = useTheme();
   const toggleTheme = useThemeUpdate();
+
+  const handleClick = () => {
+    toggleTheme();
+    document.body.style.background = !activeTheme ? "#000000" : "#ffffff";
+  };
 
   return (
     <StyledHeaderSC>
@@ -34,10 +39,10 @@ export const Header = () => {
           <LogoContainerSC>
             <Logo />
           </LogoContainerSC>
-          <ButtonTheme onClick={toggleTheme}>Toggle Theme</ButtonTheme>
+          <ButtonTheme onClick={handleClick}>Toggle Theme</ButtonTheme>
           <TopNavigation isOpen={isOpen} />
           <RightNavigation isOpen={isOpen} />
-          <Burger isOpen={isOpen} setOpen={setOpen} color={Colors.LightGray} />
+          <Burger isOpen={isOpen} setOpen={setOpen} />
         </ContainerBottomSC>
       </WrapperSC>
     </StyledHeaderSC>
