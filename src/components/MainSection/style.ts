@@ -1,5 +1,5 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const WrapperSC = styled.section`
   width: 100%;
@@ -7,6 +7,10 @@ export const WrapperSC = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 166px;
+
+  ${media.TABLET} {
+    margin-bottom: 130px;
+  }
 `;
 
 export const BlockSC = styled.div`
@@ -19,12 +23,12 @@ export const BlockSC = styled.div`
 
   ${media.TABLET} {
     max-width: 300px;
-    padding: 80px 0 314px 46px;
+    padding: 80px 0 214px 46px;
   }
 
   ${media.PHONE} {
     max-width: 200px;
-    padding: 80px 0 314px 14px;
+    padding: 80px 0 114px 14px;
   }
 `;
 
@@ -59,6 +63,7 @@ export const DescroptionSC = styled.p`
   font-size: 24px;
   line-height: 26px;
   z-index: 2;
+
   ${media.TABLET} {
     font-size: 20px;
   }
@@ -75,5 +80,9 @@ export const ButtonSC = styled.button`
 
   ${media.TABLET} {
     max-width: 208px;
+  }
+
+  &:hover {
+    background-color: ${(props) => props.theme.color.labelSlider};
   }
 `;

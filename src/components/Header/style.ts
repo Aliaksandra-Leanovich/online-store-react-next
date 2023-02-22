@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { media } from "../../ui";
+import styled from '@emotion/styled';
+import { media } from '../../ui';
 
 export const StyledHeaderSC = styled.header`
   width: 100%;
@@ -13,7 +13,6 @@ export const StyledHeaderSC = styled.header`
 
 export const WrapperSC = styled.div`
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
 `;
 
@@ -54,5 +53,18 @@ export const LogoContainerSC = styled.a`
 export const PhoneNumberSC = styled.p`
   font-size: 22px;
   line-height: 33px;
+  color: ${(props) => props.theme.color.textSlider3};
+`;
+
+export const AdressContainerSC = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+`;
+
+export const AdressSC = styled.p`
+  font-size: 14px;
+  line-height: 18px;
   color: ${(props) => props.theme.color.textSlider3};
 `;

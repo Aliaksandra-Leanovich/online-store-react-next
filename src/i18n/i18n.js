@@ -1,15 +1,15 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import translationsRU from "./ru/ru";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import translationsRU from './ru/ru';
 
 const resources = {
   ru: {
-    translation: translationsRU,
-  },
+    translation: translationsRU
+  }
 };
 const DETECTION_OPTIONS = {
-  order: ["navigator"],
+  order: ['navigator']
 };
 
 i18n
@@ -17,15 +17,16 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    fallbackLng: "ru",
+    fallbackLng: 'ru',
+    defaultLocale: 'ru',
     keySeparator: false,
     detection: DETECTION_OPTIONS,
     interpolation: {
-      escapeValue: false,
+      escapeValue: false
     },
     react: {
-      useSuspense: true,
-    },
+      useSuspense: true
+    }
   });
 
 export default i18n;

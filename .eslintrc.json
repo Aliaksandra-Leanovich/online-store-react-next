@@ -8,16 +8,16 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "overrides": [
-    {
-      "files": ["*.spec.ts", "*.spec.tsx", "*.test.ts", "*.test.tsx", "*.story.tsx"],
-      "rules": {
-        "max-lines-per-function": 0,
-        "react/display-name": 0,
-        "jest/expect-expect": 0
-      }
-    }
-  ],
+  // "overrides": [
+  //   {
+  //     "files": ["*.spec.ts", "*.spec.tsx", "*.test.ts", "*.test.tsx", "*.story.tsx"],
+  //     "rules": {
+  //       "max-lines-per-function": 0,
+  //       "react/display-name": 0,
+  //       "jest/expect-expect": 0
+  //     }
+  //   }
+  // ],
   "rules": {
     "react/jsx-props-no-spreading": 0,
     "no-use-before-define": "off",

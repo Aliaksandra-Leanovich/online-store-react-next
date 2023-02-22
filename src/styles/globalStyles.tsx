@@ -1,37 +1,33 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
 export const globalStyles = css`
   @font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy"),
-      url("../assets/static/fonts/Gilroy/Gilroy-Regular.woff2")
-        format("truetype");
+    font-family: 'Gilroy';
+    src: local('Gilroy'),
+      url('../assets/static/fonts/Gilroy/Gilroy-Regular.woff2') format('truetype');
     font-style: normal;
   }
   @font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy"),
-      url("../assets/static/fonts/Gilroy/Gilroy-Bold.woff2") format("truetype");
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url('../assets/static/fonts/Gilroy/Gilroy-Bold.woff2') format('truetype');
   }
   @font-face {
-    font-family: "Open Sans";
-    src: local("Open Sans"),
-      url("../assets/static/fonts/OpenSans/OpenSans-Regular.woff2")
-        format("truetype");
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+      url('../assets/static/fonts/OpenSans/OpenSans-Regular.woff2') format('truetype');
     font-style: normal;
   }
 
   @font-face {
-    font-family: "Roboto";
-    src: local("Roboto"),
-      url("../assets/static/fonts/Roboto/Roboto-Regular.woff2")
-        format("truetype");
+    font-family: 'Roboto';
+    src: local('Roboto'),
+      url('../assets/static/fonts/Roboto/Roboto-Regular.woff2') format('truetype');
     font-style: normal;
   }
 
   html,
   body {
-    font-family: "Gilroy";
+    font-family: 'Gilroy';
     height: 100%;
     width: 100%;
   }

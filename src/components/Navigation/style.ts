@@ -1,6 +1,6 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
-import { IStylesProps } from "../Burger/types";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
+import { IStylesProps } from '../Burger/types';
 
 export const StyledNavigationSC = styled.nav<IStylesProps>`
   display: flex;
@@ -8,7 +8,7 @@ export const StyledNavigationSC = styled.nav<IStylesProps>`
   align-items: center;
   width: 100%;
   ${media.LAPTOP} {
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     padding: 40px 0;
     flex-direction: column;
     row-gap: 30px;
@@ -41,7 +41,7 @@ export const ContainerRightSC = styled.div<IStylesProps>`
   right: 0;
 
   ${media.LAPTOP} {
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     background: ${(props) => props.theme.color.navigationBackground};
   }
 
@@ -50,7 +50,7 @@ export const ContainerRightSC = styled.div<IStylesProps>`
   }
 
   main {
-    overflow: ${({ isOpen }) => (isOpen ? "hidden" : "auto")};
+    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
   }
 `;
 

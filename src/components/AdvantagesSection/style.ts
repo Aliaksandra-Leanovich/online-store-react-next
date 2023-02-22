@@ -1,5 +1,5 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const WrapperSC = styled.section`
   width: 100%;
@@ -91,9 +91,22 @@ export const LinkSC = styled.div`
   display: flex;
   align-items: center;
   column-gap: 2px;
+  cursor: pointer;
+
   svg {
     path {
       fill: ${(props) => props.theme.color.labelSlider};
+    }
+  }
+
+  &:hover {
+    p {
+      color: ${(props) => props.theme.color.primary};
+    }
+    svg {
+      path {
+        fill: ${(props) => props.theme.color.primary};
+      }
     }
   }
 `;

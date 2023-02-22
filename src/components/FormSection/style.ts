@@ -1,5 +1,5 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const WrapperSC = styled.section`
   max-width: 1920px;
@@ -103,6 +103,10 @@ export const ButtonSC = styled.button`
   font-size: 22px;
   line-height: 29px;
   letter-spacing: 0.0375em;
+
+  &:hover {
+    background-color: ${(props) => props.theme.color.labelSlider};
+  }
 `;
 
 export const ImageSC = styled.div`

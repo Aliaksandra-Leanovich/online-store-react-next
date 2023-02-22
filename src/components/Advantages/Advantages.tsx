@@ -1,8 +1,9 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { Advantage } from "../Advantage/Advantage";
-import { AdvantagesSC } from "./style";
-import { IItemProps } from "./types";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Advantage } from '../Advantage/Advantage';
+import { AdvantagesSC } from './style';
+import { IItemProps } from './types';
+import { v4 as uuidv4 } from 'uuid';
 
 export const Advantages = () => {
   const { t } = useTranslation();
@@ -10,12 +11,12 @@ export const Advantages = () => {
   return (
     <AdvantagesSC>
       {(
-        t("advantages", {
+        t('advantages', {
           returnObjects: true,
-          defaultValue: [],
+          defaultValue: []
         }) as []
       ).map(({ name }: IItemProps) => (
-        <Advantage name={name} key={name} />
+        <Advantage name={name} key={uuidv4()} />
       ))}
     </AdvantagesSC>
   );
