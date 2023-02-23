@@ -1,1 +1,19 @@
-export enum Colors {}
+export enum Colors {
+  DarkBlack = "#000000",
+  LightBlack = "#323232",
+  LightBlack2 = "#4e4e4e",
+  White = "#ffffff",
+  Pink = "#cc4c6e",
+  LightGray = "#464646",
+  LightGray2 = "#b7b7b7",
+  LightGray3 = "#828282",
+  LightGraySlider = "#969696",
+  LightBlackSlider = "#5c5c66",
+  PriceSliderNew = "#1a1a1a",
+  PriceSliderOld = "#bcbcbc",
+  Label = "#ff3465",
+  FormBackground = "#f3f3f3",
+  FormText = "#5a5a5a",
+  FormInput = "#c4c4c4 ",
+  FormPlaceholder = "#9a9a9a",
+}
