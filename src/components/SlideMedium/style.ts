@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ContainerSlideSC = styled.div`
   max-width: 378px;
@@ -39,26 +39,28 @@ export const PriceSC = styled.div`
 `;
 
 export const NameSC = styled.p`
-  font-weight: 700;
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   color: ${(props) => props.theme.color.textSlider};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const TypeSC = styled.p`
   color: ${(props) => props.theme.color.textSlider2};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const NewPriceSC = styled.p`
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   line-height: 19px;
   color: ${(props) => props.theme.color.priceSliderNew};
 `;
 
 export const OldPriceSC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-size: 14px;
   line-height: 16px;
   color: ${(props) => props.theme.color.priceSliderOld};
@@ -68,7 +70,7 @@ export const LabelSC = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;

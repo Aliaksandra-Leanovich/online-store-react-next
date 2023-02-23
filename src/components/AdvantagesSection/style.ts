@@ -59,6 +59,12 @@ export const DecriptionSC = styled.div`
 export const ImageSC = styled.div`
   width: 100%;
   max-width: 784px;
+  height: 357px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.advantages})`};
+  background-size: 100% 100%;
 
   ${media.DESKTOP} {
     max-width: 584px;
@@ -66,6 +72,7 @@ export const ImageSC = styled.div`
 `;
 
 export const TitleSC = styled.p`
+  font-family: ${(props) => props.theme.fontFamily.primary};
   font-size: 32px;
   line-height: 34px;
   color: ${(props) => props.theme.color.primary};
@@ -77,6 +84,7 @@ export const TitleSC = styled.p`
 `;
 
 export const TextSC = styled.p`
+  font-family: ${(props) => props.theme.fontFamily.primary};
   font-size: 16px;
   line-height: 18px;
   color: ${(props) => props.theme.color.primary};
@@ -112,5 +120,6 @@ export const LinkSC = styled.div`
 `;
 
 export const LinkTextSC = styled.p`
+  font-family: ${(props) => props.theme.fontFamily.primary};
   color: ${(props) => props.theme.color.labelSlider};
 `;

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const BlockSecondSC = styled.div`
   display: flex;
@@ -7,14 +7,14 @@ export const BlockSecondSC = styled.div`
 `;
 
 export const BlockTitleSC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-size: 22px;
   line-height: 33px;
   color: ${(props) => props.theme.color.text3};
 `;
 
 export const CategorySC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   line-height: 24px;
   color: ${(props) => props.theme.color.text2};
 `;

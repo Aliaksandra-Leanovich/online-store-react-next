@@ -47,13 +47,19 @@ export const ContainerBottomSC = styled.div`
 export const LogoContainerSC = styled.a`
   max-width: 124px;
   width: 100%;
+  height: 38px;
   cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.logo})`};
 `;
 
 export const PhoneNumberSC = styled.p`
   font-size: 22px;
   line-height: 33px;
   color: ${(props) => props.theme.color.textSlider3};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const AdressContainerSC = styled.div`
@@ -67,4 +73,5 @@ export const AdressSC = styled.p`
   font-size: 14px;
   line-height: 18px;
   color: ${(props) => props.theme.color.textSlider3};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;

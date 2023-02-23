@@ -14,7 +14,6 @@ import {
   StyledHeaderSC,
   WrapperSC
 } from './style';
-import Logo from '/public/icons/logo.svg';
 import Arrow from '/public/icons/arrow_header.svg';
 
 export const Header = () => {
@@ -34,9 +33,7 @@ export const Header = () => {
           </InformationSC>
         </ContainerTopSC>
         <ContainerBottomSC>
-          <LogoContainerSC>
-            <Logo />
-          </LogoContainerSC>
+          <LogoContainerSC />
           <TopNavigation isOpen={isOpen} />
           <RightNavigation isOpen={isOpen} />
           <Burger isOpen={isOpen} setOpen={setOpen} />

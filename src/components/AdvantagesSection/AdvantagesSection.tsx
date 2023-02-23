@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next";
-import { Advantages } from "../Advantages/Advantages";
+import { useTranslation } from 'react-i18next';
+import { Advantages } from '../Advantages/Advantages';
 import {
   ContainerSC,
   DecriptionSC,
@@ -9,10 +9,10 @@ import {
   LinkTextSC,
   TextSC,
   TitleSC,
-  WrapperSC,
-} from "./style";
-import ImageIcon from "/public/icons/advantagesImage.svg";
-import ArrowImage from "/public/icons/arrow_pink.svg";
+  WrapperSC
+} from './style';
+
+import ArrowImage from '/public/icons/arrow_pink.svg';
 
 export const AdvantagesSection = () => {
   const { t } = useTranslation();
@@ -21,14 +21,12 @@ export const AdvantagesSection = () => {
     <WrapperSC>
       <ContainerSC>
         <InformationSC>
-          <ImageSC>
-            <ImageIcon />
-          </ImageSC>
+          <ImageSC />
           <DecriptionSC>
-            <TitleSC>{t("advantages.title")}</TitleSC>
-            <TextSC>{t("advantages.decription")}</TextSC>
+            <TitleSC>{t('advantages.title')}</TitleSC>
+            <TextSC>{t('advantages.decription')}</TextSC>
             <LinkSC>
-              <LinkTextSC>{t("advantages.link")}</LinkTextSC>
+              <LinkTextSC>{t('advantages.link')}</LinkTextSC>
               <ArrowImage />
             </LinkSC>
           </DecriptionSC>

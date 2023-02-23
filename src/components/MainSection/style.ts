@@ -36,10 +36,15 @@ export const Back = styled.div`
   position: absolute;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.main})`};
+  background-size: 100% 100%;
   top: 0;
   left: 0;
   z-index: 1;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 `;
 
 export const ContainerSC = styled.div`
@@ -49,10 +54,11 @@ export const ContainerSC = styled.div`
 `;
 
 export const TitleSC = styled.p`
-  font-weight: 600;
+  font-weight: ${(props) => props.theme.fontWeight.semibold};
   font-size: 99px;
   line-height: 110px;
   z-index: 2;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 52px;
@@ -63,6 +69,7 @@ export const DescroptionSC = styled.p`
   font-size: 24px;
   line-height: 26px;
   z-index: 2;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 20px;

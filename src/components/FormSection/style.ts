@@ -51,10 +51,11 @@ export const BlockSC = styled.div`
 `;
 
 export const TitleSC = styled.p`
-  font-weight: 700;
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 48px;
   line-height: 53px;
   color: ${(props) => props.theme.color.primary};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 32px;
@@ -66,6 +67,7 @@ export const TextSC = styled.p`
   font-size: 22px;
   line-height: 29px;
   color: ${(props) => props.theme.color.formText};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 18px;
@@ -115,6 +117,10 @@ export const ImageSC = styled.div`
   left: 2%;
   width: 790px;
   height: 452px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.form})`};
 
   ${media.DESKTOP} {
     width: 490px;

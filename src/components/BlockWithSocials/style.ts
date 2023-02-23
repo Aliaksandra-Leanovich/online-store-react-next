@@ -1,5 +1,5 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const BlockThirdSC = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const InformationSC = styled.div`
 `;
 
 export const TextSC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   line-height: 24px;
   text-align: right;
   color: ${(props) => props.theme.color.text2};

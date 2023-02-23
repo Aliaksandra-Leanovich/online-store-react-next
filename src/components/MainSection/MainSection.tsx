@@ -1,15 +1,5 @@
-import React from "react";
-import {
-  Back,
-  BlockSC,
-  ButtonSC,
-  ContainerSC,
-  DescroptionSC,
-  TitleSC,
-  WrapperSC,
-} from "./style";
-import BackgroundImage from "/public/icons/mainBackground.svg";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import { Back, BlockSC, ButtonSC, ContainerSC, DescroptionSC, TitleSC, WrapperSC } from './style';
 
 export const MainSection = () => {
   const { t } = useTranslation();
@@ -17,13 +7,11 @@ export const MainSection = () => {
   return (
     <WrapperSC>
       <ContainerSC>
-        <Back>
-          <BackgroundImage />
-        </Back>
+        <Back />
         <BlockSC>
-          <TitleSC>{t("main.title")}</TitleSC>
-          <DescroptionSC>{t("main.decription")}</DescroptionSC>
-          <ButtonSC>{t("main.button")}</ButtonSC>
+          <TitleSC>{t('main.title')}</TitleSC>
+          <DescroptionSC>{t('main.decription')}</DescroptionSC>
+          <ButtonSC>{t('main.button')}</ButtonSC>
         </BlockSC>
       </ContainerSC>
     </WrapperSC>

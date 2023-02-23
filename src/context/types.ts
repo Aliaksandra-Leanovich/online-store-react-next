@@ -1,11 +1,4 @@
-import { ReactNode } from "react";
-
-export interface ITheme {
-  color: {
-    primary: string;
-    Pink: string;
-  };
-}
+import { ReactNode } from 'react';
 
 export interface IThemeContextProviderProps {
   children: ReactNode;

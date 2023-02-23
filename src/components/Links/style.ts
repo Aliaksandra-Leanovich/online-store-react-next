@@ -37,7 +37,7 @@ export const BorderSC = styled.div`
 `;
 
 export const LinkSC = styled(Link)`
-  font-family: 'Roboto', sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-size: 18px;
   line-height: 27px;
   padding-bottom: 6px;
