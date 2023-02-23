@@ -1,7 +1,8 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { LinkSC, LinksContainerSC } from "./style";
-import { ILink } from "./types";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { BorderSC, LinkContainerSC, LinkSC, LinksContainerSC } from './style';
+import { ILink } from './types';
+import { v4 as uuidv4 } from 'uuid';
 
 export const Links = () => {
   const { t } = useTranslation();
@@ -9,14 +10,17 @@ export const Links = () => {
   return (
     <LinksContainerSC>
       {(
-        t("nav", {
+        t('nav', {
           returnObjects: true,
-          defaultValue: [],
+          defaultValue: []
         }) as []
       ).map(({ name }: ILink) => (
-        <LinkSC key={name} href="/">
-          {name}
-        </LinkSC>
+        <LinkContainerSC>
+          <LinkSC key={uuidv4()} href="/">
+            {name}
+          </LinkSC>
+          <BorderSC />
+        </LinkContainerSC>
       ))}
     </LinksContainerSC>
   );

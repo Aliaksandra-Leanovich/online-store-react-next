@@ -1,5 +1,4 @@
-import { Colors } from "@/ui";
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ContainerSlideSC = styled.div`
   max-width: 378px;
@@ -40,45 +39,53 @@ export const PriceSC = styled.div`
 `;
 
 export const NameSC = styled.p`
-  font-weight: 700;
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: ${(props) => props.theme.color.textSlider};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const TypeSC = styled.p`
-  color: ${Colors.LightBlackSlider};
+  color: ${(props) => props.theme.color.textSlider2};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const NewPriceSC = styled.p`
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   line-height: 19px;
-  color: ${Colors.PriceSliderNew};
+  color: ${(props) => props.theme.color.priceSliderNew};
 `;
 
 export const OldPriceSC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-size: 14px;
   line-height: 16px;
-  color: ${Colors.PriceSliderOld};
+  color: ${(props) => props.theme.color.priceSliderOld};
 `;
 
 export const LabelSC = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: ${Colors.White};
+  background-color: ${(props) => props.theme.color.labelSlider};
+  color: ${(props) => props.theme.color.secondary};
   width: 56px;
   height: 56px;
-  background-color: ${Colors.Label};
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ButtonTheme = styled.button`
+  background-color: ${(props) => props.theme.color.labelSlider};
+  width: 300px;
+  padding: 20px;
 `;

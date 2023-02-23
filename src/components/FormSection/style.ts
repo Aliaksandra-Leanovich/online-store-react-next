@@ -1,5 +1,5 @@
-import { Colors, media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const WrapperSC = styled.section`
   max-width: 1920px;
@@ -8,6 +8,8 @@ export const WrapperSC = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+  background-color: ${(props) => props.theme.color.secondary};
 `;
 
 export const ContainerSC = styled.div`
@@ -33,7 +35,7 @@ export const ContainerSC = styled.div`
 
 export const BlockSC = styled.div`
   padding: 98px 280px 98px 433px;
-  background: ${Colors.FormBackground};
+  background: ${(props) => props.theme.color.formBackground};
 
   ${media.DESKTOP} {
     padding: 76px 180px 76px 330px;
@@ -49,9 +51,11 @@ export const BlockSC = styled.div`
 `;
 
 export const TitleSC = styled.p`
-  font-weight: 700;
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 48px;
   line-height: 53px;
+  color: ${(props) => props.theme.color.primary};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 32px;
@@ -62,7 +66,8 @@ export const TitleSC = styled.p`
 export const TextSC = styled.p`
   font-size: 22px;
   line-height: 29px;
-  color: ${Colors.FormText};
+  color: ${(props) => props.theme.color.formText};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 
   ${media.TABLET} {
     font-size: 18px;
@@ -80,27 +85,30 @@ export const FormSC = styled.form`
 
 export const InputSC = styled.input`
   width: 100%;
-  border-bottom: 1px solid ${Colors.FormInput};
+  border-bottom: 1px solid ${(props) => props.theme.color.formInput};
   background-color: transparent;
   padding: 8px 2px;
 
   &::placeholder {
     font-size: 22px;
     line-height: 29px;
-    color: ${Colors.FormPlaceholder};
+    color: ${(props) => props.theme.color.formPlaceholder};
   }
 `;
 
 export const ButtonSC = styled.button`
-  background-color: ${Colors.DarkBlack};
-  color: ${Colors.White};
+  background-color: ${(props) => props.theme.color.primary};
+  color: ${(props) => props.theme.color.secondary};
   width: 100%;
   padding: 16px 0;
   text-align: center;
   font-size: 22px;
   line-height: 29px;
   letter-spacing: 0.0375em;
-  color: ${Colors.White};
+
+  &:hover {
+    background-color: ${(props) => props.theme.color.labelSlider};
+  }
 `;
 
 export const ImageSC = styled.div`
@@ -109,6 +117,10 @@ export const ImageSC = styled.div`
   left: 2%;
   width: 790px;
   height: 452px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.form})`};
 
   ${media.DESKTOP} {
     width: 490px;

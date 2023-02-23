@@ -1,11 +1,12 @@
-import { media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
 
 export const WrapperSC = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.theme.color.sliderBackground};
 `;
 
 export const ContainerSC = styled.div`
@@ -14,7 +15,7 @@ export const ContainerSC = styled.div`
 `;
 
 export const TitleSC = styled.p`
-  font-family: "Open Sans", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.primary};
   font-size: 28px;
   line-height: 32px;
 `;

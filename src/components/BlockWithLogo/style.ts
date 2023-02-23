@@ -1,5 +1,4 @@
-import { Colors } from "@/ui";
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const BlockFirstSC = styled.div`
   display: flex;
@@ -13,35 +12,41 @@ export const BlockWithLogoSC = styled.div`
   row-gap: 16px;
 `;
 
-export const LogoSC = styled.img`
-  width: 100%;
-  max-width: 194px;
-`;
-
 export const PhoneSC = styled.p`
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 22px;
   line-height: 26px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const EmailSC = styled.p`
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 22px;
   line-height: 26px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const AddresSC = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   line-height: 24px;
-  color: ${Colors.LightGray3};
+  color: ${(props) => props.theme.color.text3};
 `;
 
 export const BlockFirstFooterSC = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   line-height: 24px;
-  color: ${Colors.LightGray2};
+  color: ${(props) => props.theme.color.text2};
+`;
+
+export const LogoContainerSC = styled.a`
+  max-width: 194px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.theme.backgrounds.logo})`};
 `;

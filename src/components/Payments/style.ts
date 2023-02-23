@@ -1,10 +1,11 @@
-import { Colors, media } from "@/ui";
-import styled from "@emotion/styled";
+import { media } from '@/ui';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { IProps } from './Payments';
 
 export const WrapperSC = styled.div`
   width: 100%;
   max-width: 604px;
-  mix-blend-mode: screen;
   filter: grayscale(100%);
 `;
 
@@ -40,4 +41,14 @@ export const ContainerSC = styled.div`
     row-gap: 20px;
     column-gap: 20px;
   }
+`;
+
+export const ContainerIconSC = styled.div<IProps>`
+  width: ${({ theme, name }) => `${theme.payments[name as keyof typeof theme.payments].width}px`};
+  height: ${({ theme, name }) => `${theme.payments[name as keyof typeof theme.payments].height}px`};
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ theme, name }) =>
+    ` url(${theme.payments[name as keyof typeof theme.payments].src})`};
 `;

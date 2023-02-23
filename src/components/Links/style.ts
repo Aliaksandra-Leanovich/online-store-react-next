@@ -1,6 +1,6 @@
-import { Colors, media } from "@/ui";
-import styled from "@emotion/styled";
-import Link from "next/link";
+import { media } from '@/ui';
+import styled from '@emotion/styled';
+import Link from 'next/link';
 
 export const LinksContainerSC = styled.div`
   display: flex;
@@ -13,22 +13,37 @@ export const LinksContainerSC = styled.div`
   }
 `;
 
+export const LinkContainerSC = styled.div`
+  position: relative;
+  &:hover {
+    div {
+      display: block;
+    }
+    cursor: pointer;
+  }
+`;
+
+export const BorderSC = styled.div`
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-bottom: 2px solid ${(props) => props.theme.color.primary};
+
+  ${media.LAPTOP} {
+    border-bottom: 2px solid ${(props) => props.theme.color.labelSlider};
+  }
+`;
+
 export const LinkSC = styled(Link)`
-  font-family: "Roboto", sans-serif;
+  font-family: ${(props) => props.theme.fontFamily.secondary};
   font-size: 18px;
   line-height: 27px;
   padding-bottom: 6px;
-
-  &:hover {
-    cursor: pointer;
-    border-bottom: 2px solid ${Colors.DarkBlack};
-  }
+  color: ${(props) => props.theme.color.primary};
 
   ${media.LAPTOP} {
-    color: ${Colors.Label};
-
-    &:hover {
-      border-bottom: 2px solid ${Colors.Label};
-    }
+    color: ${(props) => props.theme.color.labelSlider};
   }
 `;

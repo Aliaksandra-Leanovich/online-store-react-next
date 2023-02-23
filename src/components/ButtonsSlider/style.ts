@@ -1,4 +1,4 @@
-import { Colors, media } from "@/ui";
+import { media } from "@/ui";
 import styled from "@emotion/styled";
 
 export const ButtonsSC = styled.div`
@@ -23,7 +23,7 @@ export const ArrowLeftSC = styled.div`
   &:hover {
     svg {
       path {
-        fill: ${Colors.DarkBlack};
+        fill: ${(props) => props.theme.color.primary};
       }
     }
   }
@@ -35,7 +35,7 @@ export const ArrowRightSC = styled.div`
   &:active {
     svg {
       path {
-        fill: ${Colors.DarkBlack};
+        fill: ${(props) => props.theme.color.primary};
       }
     }
   }

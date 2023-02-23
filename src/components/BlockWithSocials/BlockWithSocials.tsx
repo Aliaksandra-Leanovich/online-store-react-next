@@ -1,16 +1,11 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { BlockTitleSC, CategorySC } from "../BlockCategories/style";
-import { IItem } from "../Footer/types";
-import { Payments } from "../Payments/Payments";
-import { SocialMedia } from "../SocialMedia/SocialMedia";
-import {
-  BlockThirdSC,
-  ContainerTextSC,
-  InformationSC,
-  TextSC,
-  TopSC,
-} from "./style";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { BlockTitleSC, CategorySC } from '../BlockCategories/style';
+import { IItem } from '../Footer/types';
+import { Payments } from '../Payments/Payments';
+import { SocialMedia } from '../SocialMedia/SocialMedia';
+import { BlockThirdSC, ContainerTextSC, InformationSC, TextSC, TopSC } from './style';
+import { v4 as uuidv4 } from 'uuid';
 
 export const BlockWithSocials = () => {
   const { t } = useTranslation();
@@ -19,21 +14,21 @@ export const BlockWithSocials = () => {
     <BlockThirdSC>
       <TopSC>
         <InformationSC>
-          <BlockTitleSC>{t("footer.information")}</BlockTitleSC>
+          <BlockTitleSC>{t('footer.information')}</BlockTitleSC>
           {(
-            t("footer.informations", {
+            t('footer.informations', {
               returnObjects: true,
-              defaultValue: [],
+              defaultValue: []
             }) as []
           ).map(({ name }: IItem) => (
-            <CategorySC key={name}>{name}</CategorySC>
+            <CategorySC key={uuidv4()}>{name}</CategorySC>
           ))}
         </InformationSC>
         <SocialMedia />
       </TopSC>
       <Payments />
       <ContainerTextSC>
-        <TextSC>{t("footer.text")}</TextSC>
+        <TextSC>{t('footer.text')}</TextSC>
       </ContainerTextSC>
     </BlockThirdSC>
   );

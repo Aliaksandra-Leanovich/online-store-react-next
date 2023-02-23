@@ -1,5 +1,4 @@
-import { Colors } from "@/ui";
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ContainerSlideSC = styled.div`
   max-width: 990px;
@@ -16,18 +15,18 @@ export const DecriptionSC = styled.div`
 `;
 
 export const NameSC = styled.p`
-  font-weight: 700;
+  font-weight: ${(props) => props.theme.fontWeight.bold};
   font-size: 48px;
   line-height: 62px;
   letter-spacing: 0.0375em;
   text-transform: uppercase;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const TypeSC = styled.p`
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: ${Colors.LightGraySlider};
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 export const ImageSC = styled.div`

@@ -1,23 +1,24 @@
-import { useRef } from "react";
-import { Navigation, Swiper as SwiperType } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import { SwiperSlide } from "swiper/react";
-import { ButtonsSlider } from "../ButtonsSlider/ButtonsSlider";
-import { SlideMedium } from "../SlideMedium/SlideMedium";
-import { ContainerSwiperSC, CustomSwiperSC } from "./style";
-import { IData } from "./types";
+import { useRef } from 'react';
+import { Navigation, Swiper as SwiperType } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { SwiperSlide } from 'swiper/react';
+import { ButtonsSlider } from '../ButtonsSlider/ButtonsSlider';
+import { SlideMedium } from '../SlideMedium/SlideMedium';
+import { ContainerSwiperSC, CustomSwiperSC } from './style';
+import { IData } from './types';
+import { v4 as uuidv4 } from 'uuid';
 
 const breakpoints = {
   768: {
-    slidesPerView: 2,
+    slidesPerView: 2
   },
   1152: {
-    slidesPerView: 3,
+    slidesPerView: 3
   },
   1440: {
-    slidesPerView: 4,
-  },
+    slidesPerView: 4
+  }
 };
 
 export const SliderMedium = ({ data }: IData) => {
@@ -35,10 +36,9 @@ export const SliderMedium = ({ data }: IData) => {
           loop={true}
           breakpoints={breakpoints}
           spaceBetween={56}
-          modules={[Navigation]}
-        >
+          modules={[Navigation]}>
           {data.map((item) => (
-            <SwiperSlide key={item.name}>
+            <SwiperSlide key={uuidv4()}>
               <SlideMedium item={item} />
             </SwiperSlide>
           ))}

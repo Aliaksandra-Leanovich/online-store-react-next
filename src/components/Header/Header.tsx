@@ -1,19 +1,20 @@
-import { Colors } from "@/ui";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Burger } from "../Burger";
-import { RightNavigation } from "../Navigation/RightNavigation";
-import { TopNavigation } from "../Navigation/TopNavigation";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Burger } from '../Burger';
+import { RightNavigation } from '../Navigation/RightNavigation';
+import { TopNavigation } from '../Navigation/TopNavigation';
 import {
+  AdressContainerSC,
+  AdressSC,
   ContainerBottomSC,
   ContainerTopSC,
   InformationSC,
   LogoContainerSC,
   PhoneNumberSC,
   StyledHeaderSC,
-  WrapperSC,
-} from "./style";
-import Logo from "/public/icons/logo.svg";
+  WrapperSC
+} from './style';
+import Arrow from '/public/icons/arrow_header.svg';
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -24,16 +25,18 @@ export const Header = () => {
       <WrapperSC>
         <ContainerTopSC>
           <InformationSC>
-            <PhoneNumberSC>{t("header.phone")}</PhoneNumberSC>
+            <AdressContainerSC>
+              <AdressSC>Санкт-Петербург</AdressSC>
+              <Arrow />
+            </AdressContainerSC>
+            <PhoneNumberSC>{t('header.phone')}</PhoneNumberSC>
           </InformationSC>
         </ContainerTopSC>
         <ContainerBottomSC>
-          <LogoContainerSC>
-            <Logo />
-          </LogoContainerSC>
+          <LogoContainerSC />
           <TopNavigation isOpen={isOpen} />
           <RightNavigation isOpen={isOpen} />
-          <Burger isOpen={isOpen} setOpen={setOpen} color={Colors.LightGray} />
+          <Burger isOpen={isOpen} setOpen={setOpen} />
         </ContainerBottomSC>
       </WrapperSC>
     </StyledHeaderSC>
