@@ -7,6 +7,7 @@ export const StyledNavigationSC = styled.nav<IStylesProps>`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
   ${media.LAPTOP} {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     padding: 40px 0;
@@ -18,6 +19,16 @@ export const StyledNavigationSC = styled.nav<IStylesProps>`
 export const LinksContainerSC = styled.div`
   display: flex;
   column-gap: 25px;
+`;
+
+export const IconSC = styled.button`
+  &:hover {
+    svg {
+      path {
+        fill: ${(props) => props.theme.color.labelSlider};
+      }
+    }
+  }
 
   ${media.LAPTOP} {
     svg {
@@ -28,9 +39,18 @@ export const LinksContainerSC = styled.div`
   }
 `;
 
+export const IconFavoriteSC = styled.div`
+  &:hover {
+    svg {
+      path {
+        stroke: ${(props) => props.theme.color.labelSlider};
+      }
+    }
+  }
+`;
+
 export const ContainerRightSC = styled.div<IStylesProps>`
   background: ${(props) => props.theme.color.primary};
-
   height: 100vh;
   display: none;
   flex-direction: column;
