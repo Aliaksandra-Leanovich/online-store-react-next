@@ -3,7 +3,7 @@ export interface ISlide {
   type: string;
   priceNew: string;
   priceOld: string;
-  image: any;
+  image: string;
   label: string;
 }
 export interface IData {

@@ -1,2 +1,1 @@
-export { media } from "./media";
-export { Typography } from "./Typography";
+export { media } from './media';

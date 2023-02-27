@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { IProps } from './type';
 
 export const ContainerSlideSC = styled.div`
   max-width: 378px;
@@ -10,16 +11,14 @@ export const ContainerSlideSC = styled.div`
   position: relative;
 `;
 
-export const ImageContainerSC = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const ImageContainerSC = styled.div<IProps>`
   width: 100%;
-`;
-
-export const ImageSC = styled.img`
-  width: 100%;
-  max-width: 294px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ theme, name }) =>
+    ` url(${theme.products[name as keyof typeof theme.products]})`};
 `;
 
 export const InformationSC = styled.div`

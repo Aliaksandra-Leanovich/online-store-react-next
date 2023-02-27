@@ -1,9 +1,13 @@
 export interface ISlide {
   name: string;
   type: string;
-  image: JSX.Element;
+  image: string;
 }
 
 export interface IPropsSlide {
   item: ISlide;
+}
+
+export interface IProps {
+  name: string;
 }

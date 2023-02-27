@@ -1,0 +1,15 @@
+{
+  "fonts": {
+    "fontWeight": {
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700",
+      "extrabold": "800"
+    },
+
+    "fontFamily": {
+      "primary": "'Montserrat', sans-serif",
+      "secondary": "'Raleway', sans-serif"
+    }
+  }
+}

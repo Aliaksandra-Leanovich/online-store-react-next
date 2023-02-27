@@ -1,6 +1,14 @@
-import { css } from '@emotion/react';
+import { ComponentSelector, css, CSSObject, Keyframes, SerializedStyles } from '@emotion/react';
+import { ArrayCSSInterpolation } from '@emotion/serialize';
 
 export const globalStyles = css`
+  @font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('/fonts/ProximaNova-Bold.woff') format('woff');
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+  }
   html,
   body {
     height: 100%;

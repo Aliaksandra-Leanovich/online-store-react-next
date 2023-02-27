@@ -12,13 +12,11 @@ import '../i18n/i18n';
 
 const MainLayout = ({ children }: IThemeContextProviderProps) => {
   const { t } = useTranslation();
-
   const { activeTheme, setActiveTheme } = useTheme();
-  const [mainTheme, setMainTheme] = useState(darkTheme);
+  const [mainTheme, setMainTheme] = useState(lightTheme);
   const daytime = isDayTime();
   const timezon = useGetTimezone();
   const timezoneTheme = useSetTheme(timezon);
-  const themeToogle = activeTheme ? grayTheme : darkTheme;
 
   useEffect(() => {
     if (daytime) {
@@ -28,13 +26,13 @@ const MainLayout = ({ children }: IThemeContextProviderProps) => {
     document.body.style.backgroundColor = activeTheme ? '#ffffff' : '#000000';
   }, [activeTheme, daytime]);
 
-  useEffect(() => {
-    if (timezoneTheme === 'light') {
-      setActiveTheme(true);
-      setMainTheme(grayTheme);
-    }
-    document.body.style.backgroundColor = activeTheme ? '#3d3d3d ' : '#000000';
-  }, [timezoneTheme]);
+  // useEffect(() => {
+  //   if (timezoneTheme === 'light') {
+  //     setActiveTheme(true);
+  //     setMainTheme(grayTheme);
+  //   }
+  //   document.body.style.backgroundColor = activeTheme ? '#ffffff ' : '#000000';
+  // }, [activeTheme, timezoneTheme]);
 
   return (
     <ThemeProvider theme={mainTheme}>

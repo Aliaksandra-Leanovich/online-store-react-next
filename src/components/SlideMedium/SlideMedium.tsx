@@ -1,4 +1,4 @@
-import { SwiperSlide } from "swiper/react";
+import { SwiperSlide } from 'swiper/react';
 import {
   ContainerSlideSC,
   DescriptionSC,
@@ -9,16 +9,16 @@ import {
   NewPriceSC,
   OldPriceSC,
   PriceSC,
-  TypeSC,
-} from "./style";
-import { IPropsSlide } from "./type";
+  TypeSC
+} from './style';
+import { IPropsSlide } from './type';
 
 export const SlideMedium = ({ item }: IPropsSlide) => {
   return (
     <SwiperSlide>
       <ContainerSlideSC>
         {item.label && <LabelSC>{item.label}</LabelSC>}
-        <ImageContainerSC>{item.image}</ImageContainerSC>
+        <ImageContainerSC name={item.image} />
         <InformationSC>
           <NameSC>{item.name}</NameSC>
           <DescriptionSC>

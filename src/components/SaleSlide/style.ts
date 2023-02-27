@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { IProps } from './type';
 
 export const ContainerSlideSC = styled.div`
   max-width: 990px;
@@ -29,7 +30,13 @@ export const TypeSC = styled.p`
   font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
-export const ImageSC = styled.div`
+export const ImageSC = styled.div<IProps>`
   position: relative;
   width: 100%;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ theme, name }) =>
+    ` url(${theme.products[name as keyof typeof theme.products]})`};
 `;

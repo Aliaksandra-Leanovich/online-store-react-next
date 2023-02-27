@@ -1,5 +1,6 @@
 import { media } from '@/ui';
 import styled from '@emotion/styled';
+import imageB from '../../assets/icons/formBackground.png';
 
 export const WrapperSC = styled.section`
   width: 100%;
@@ -38,6 +39,7 @@ export const Back = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-image: ${(props) => `url(${props.theme.backgrounds.main})`};
+  /* background-image: url('../../assets/icons/formBackground.png'); */
   background-size: 100% 100%;
   top: 0;
   left: 0;

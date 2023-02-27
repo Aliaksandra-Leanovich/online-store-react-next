@@ -8,18 +8,7 @@ import { SlideMedium } from '../SlideMedium/SlideMedium';
 import { ContainerSwiperSC, CustomSwiperSC } from './style';
 import { IData } from './types';
 import { v4 as uuidv4 } from 'uuid';
-
-const breakpoints = {
-  768: {
-    slidesPerView: 2
-  },
-  1152: {
-    slidesPerView: 3
-  },
-  1440: {
-    slidesPerView: 4
-  }
-};
+import { breakpoints } from './config';
 
 export const SliderMedium = ({ data }: IData) => {
   const swiperRef = useRef<SwiperType>();

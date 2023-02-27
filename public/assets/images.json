@@ -1,0 +1,8 @@
+{
+  "backgrounds": {
+    "main": "../../assets/icons/formBackground.png",
+    "advantages": "../../assets/icons/mainBackground.jpg",
+    "form": "../../assets/icons/mainBackground.jpg",
+    "logo": "../../assets/icons/formBackground.png"
+  }
+}

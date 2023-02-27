@@ -15,10 +15,8 @@ export const Links = () => {
           defaultValue: []
         }) as []
       ).map(({ name }: ILink) => (
-        <LinkContainerSC>
-          <LinkSC key={uuidv4()} href="/">
-            {name}
-          </LinkSC>
+        <LinkContainerSC key={uuidv4()}>
+          <LinkSC href="/">{name}</LinkSC>
           <BorderSC />
         </LinkContainerSC>
       ))}

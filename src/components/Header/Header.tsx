@@ -1,3 +1,4 @@
+// import Arrow from '@/assets/icons/arrow_header.svg';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Burger } from '../Burger';
@@ -14,7 +15,6 @@ import {
   StyledHeaderSC,
   WrapperSC
 } from './style';
-import Arrow from '/public/icons/arrow_header.svg';
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ export const Header = () => {
           <InformationSC>
             <AdressContainerSC>
               <AdressSC>Санкт-Петербург</AdressSC>
-              <Arrow />
+              {/* <Arrow /> */}
             </AdressContainerSC>
             <PhoneNumberSC>{t('header.phone')}</PhoneNumberSC>
           </InformationSC>

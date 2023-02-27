@@ -3,10 +3,14 @@ export interface ISlide {
   type: string;
   priceNew: string;
   priceOld: string;
-  image: JSX.Element;
+  image: string;
   label: string;
 }
 
 export interface IPropsSlide {
   item: ISlide;
+}
+
+export interface IProps {
+  name: string;
 }

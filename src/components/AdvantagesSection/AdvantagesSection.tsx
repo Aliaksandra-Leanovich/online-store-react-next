@@ -12,7 +12,7 @@ import {
   WrapperSC
 } from './style';
 
-import ArrowImage from '/public/icons/arrow_pink.svg';
+// import ArrowImage from '@/assets/icons/arrow_pink.svg';
 
 export const AdvantagesSection = () => {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ export const AdvantagesSection = () => {
             <TextSC>{t('advantages.decription')}</TextSC>
             <LinkSC>
               <LinkTextSC>{t('advantages.link')}</LinkTextSC>
-              <ArrowImage />
+              {/* <ArrowImage /> */}
             </LinkSC>
           </DecriptionSC>
         </InformationSC>
