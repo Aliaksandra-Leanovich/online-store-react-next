@@ -3,7 +3,6 @@ export interface IStylesProps {
 }
 
 export interface IModalProps {
-  handleClose: () => void;
+  handleClose: VoidFunction;
   show: boolean;
-  //   children: JSX.Element;
 }
